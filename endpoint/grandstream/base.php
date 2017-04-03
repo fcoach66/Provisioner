@@ -13,35 +13,10 @@ class endpoint_grandstream_base extends endpoint_base {
 
     function reboot() {
         if (($this->engine == "asterisk") AND ($this->system == "unix")) {
-            exec($this->engine_location . " -rx 'sip show peers like " . $this->settings['line'][0]['username'] . "'", $output);
-            if (preg_match("/\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/", $output[1], $matches)) {
-                $ip = $matches[0];
-                $pass = (isset($this->settings['admin_pass']) ? $this->settings['admin_pass'] : 'admin');
-
-                if (function_exists('curl_init')) {
-                    $ckfile = tempnam($this->sys_get_temp_dir(), "GSCURLCOOKIE");
-                    $ch = curl_init('http://' . $ip . '/dologin.htm');
-                    curl_setopt($ch, CURLOPT_COOKIEJAR, $ckfile);
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                    curl_setopt($ch, CURLOPT_POST, true);
-
-                    $data = array(
-                        'P2' => $pass,
-                        'Login' => 'Login',
-                        'gnkey' => '0b82'
-                    );
-
-                    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-                    $output = curl_exec($ch);
-                    $info = curl_getinfo($ch);
-                    curl_close($ch);
-
-                    $ch = curl_init("http://" . $ip . "/rs.htm");
-                    curl_setopt($ch, CURLOPT_COOKIEFILE, $ckfile);
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                    $output = curl_exec($ch);
-                    curl_close($ch);
-                }
+            if ($this->settings['line'][0]['tech'] == "pjsip") {
+                exec($this->engine_location . " -rx 'pjsip send notify aastra-check-cfg endpoint " . $this->settings['line'][0]['username'] . "'");
+            } else {
+                exec($this->engine_location . " -rx 'sip notify aastra-check-cfg " . $this->settings['line'][0]['username'] . "'");
             }
         }
     }
