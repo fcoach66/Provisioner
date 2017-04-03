@@ -5,8 +5,8 @@
       "directory": "grandstream",
       "brand_id": "2",
       "package": "grandstream.tgz",
-      "md5sum": "2b4fd590c8193fb7c24663176d678a37",
-      "last_modified": 1395185865,
+      "md5sum": "3d15350f71ee2b2f6428776878c218ad",
+      "last_modified": 1491004800,
       "family_list": [
         {
           "id": "2",
@@ -33,6 +33,14 @@
           "last_modified": null
         },
         {
+          "id": "5",
+          "name": "GXP Small Business HD series [1610,1620,1625,1628,1630]",
+          "directory": "gxpsb",
+          "description": "Use Grandstream XML config files",
+          "changelog": "",
+          "last_modified": null
+        },
+        {
           "id": "3",
           "name": "HandyTone [HT486 REV.2, HT286 REV.3]",
           "directory": "htx86",
@@ -40,6 +48,15 @@
           "changelog": "",
           "last_modified": null
         }
+        {
+          "id": "6",
+          "name": "HandyTone [HT812, HT814]",
+          "directory": "ht81x",
+          "description": "",
+          "changelog": "",
+          "last_modified": null
+        }
+
       ],
       "oui_list": [
         "000B82"

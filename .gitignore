@@ -2,3 +2,5 @@ setup.php
 temp/
 .DS_Store
 nbproject/private/
+endpoint/grandstream/grandstream.tgz
+

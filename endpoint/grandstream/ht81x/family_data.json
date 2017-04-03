@@ -1,10 +1,10 @@
 {
   "data": {
-    "name": "HandyTone [HT486 REV.2, HT286 REV.3]",
+    "name": "HandyTone [HT812, HT814]",
     "id": "3",
     "directory": "htx86",
     "firmware_ver": 1378149403,
-    "firmware_pkg": "htx86_firmware.tgz",
+    "firmware_pkg": "ht81x_firmware.tgz",
     "description": "",
     "configuration_files": "cfg$mac",
     "changelog": "",
@@ -14,16 +14,16 @@
     ],
     "model_list": [
       {
-        "model": "HT486",
-        "lines": "1",
+        "model": "HT812",
+        "lines": "2",
         "id": "1",
         "template_data": [
           "template_data.json"
         ]
       },
       {
-        "model": "HT286",
-        "lines": "2",
+        "model": "HT814",
+        "lines": "4",
         "id": "2",
         "template_data": [
           "template_data.json"
