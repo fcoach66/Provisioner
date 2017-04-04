@@ -5,8 +5,8 @@
       "directory": "grandstream",
       "brand_id": "2",
       "package": "grandstream.tgz",
-      "md5sum": "3d15350f71ee2b2f6428776878c218ad",
-      "last_modified": 1491004800,
+      "md5sum": "ff7298ec8a4ec207dc4019a6cbf74e07",
+      "last_modified": 1491091200,
       "family_list": [
         {
           "id": "2",
@@ -47,11 +47,19 @@
           "description": "",
           "changelog": "",
           "last_modified": null
-        }
+        },
         {
           "id": "6",
-          "name": "HandyTone [HT812, HT814]",
+          "name": "HandyTone Series 8 [HT812, HT814]",
           "directory": "ht81x",
+          "description": "",
+          "changelog": "",
+          "last_modified": null
+        },
+        {
+          "id": "7",
+          "name": "GXW40xx Series [GXW4004, GXW4008]",
+          "directory": "gxw40xx",
           "description": "",
           "changelog": "",
           "last_modified": null

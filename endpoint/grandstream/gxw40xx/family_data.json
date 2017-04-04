@@ -1,10 +1,10 @@
 {
   "data": {
-    "name": "HandyTone Series 8 [HT812, HT814]",
-    "id": "6",
-    "directory": "ht81x",
-    "firmware_ver": 1484347560,
-    "firmware_pkg": "ht81x_firmware.tgz",
+    "name": "GXW40xx Series [GXW4004, GXW4008]",
+    "id": "7",
+    "directory": "gxw40xx",
+    "firmware_ver": 1463775420,
+    "firmware_pkg": "gxw40xx_firmware.tgz",
     "description": "",
     "configuration_files": "cfg$mac",
     "changelog": "",
@@ -14,22 +14,22 @@
     ],
     "model_list": [
       {
-        "model": "HT812",
-        "lines": "2",
+        "model": "GXW4004",
+        "lines": "4",
         "id": "1",
         "template_data": [
           "template_data.json"
         ]
       },
       {
-        "model": "HT814",
-        "lines": "4",
+        "model": "GXW4008",
+        "lines": "8",
         "id": "2",
         "template_data": [
           "template_data.json"
         ]
       }
     ],
-    "firmware_md5sum": "fe3fd38636e0f12ab72db07d7af24e15"
+    "firmware_md5sum": "0c58ddeeb55e6991c858bbe8f529fba2"
   }
 }
