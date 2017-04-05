@@ -6,7 +6,7 @@
     "firmware_ver": 1463775420,
     "firmware_pkg": "gxw40xx_firmware.tgz",
     "description": "",
-    "configuration_files": "cfg$mac",
+    "configuration_files": "cfg$mac.xml",
     "changelog": "",
     "provisioning_types": [
       "tftp",
