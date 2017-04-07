@@ -7,9 +7,9 @@
  * @package Provisioner
  *
  */
-class endpoint_grandstream_gxw40xx_phone extends endpoint_grandstream_base {
+class endpoint_grandstream_ht81x_phone extends endpoint_grandstream_base {
 
-	public $family_line = 'gxw40xx';
+	public $family_line = 'ht81x';
 
 	function parse_lines_hook($line_data, $line_total) {
         $line_data['line_active'] = (isset($line_data['secret']) ? '1' : '0');

@@ -6,7 +6,7 @@
     "firmware_ver": 1484347560,
     "firmware_pkg": "ht81x_firmware.tgz",
     "description": "",
-    "configuration_files": "cfg$mac",
+    "configuration_files": "cfg$mac.xml",
     "changelog": "",
     "provisioning_types": [
       "tftp",
